@@ -2,11 +2,11 @@
   <head>
     <title>
     Title
-    <title>
-  <head>
+    </title>
+  </head>
   <body>
     <h1>
     Welcome to my website!
-    <h1>
-  <body>
-<html>
+    </h1>
+  </body>
+</html>
