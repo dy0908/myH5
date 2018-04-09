@@ -7,21 +7,23 @@
     <link rel="stylesheet" type="text/css" href="css/test.css">
     <!--newjacascript-->
     <script>
-      // alert("我是渣渣辉")
-      // alert("贪玩蓝月")
-      // alert("你素没有忘过的船新版本")
       var name = window.prompt("username:")
-      function myFunction()
+      function showname()
           {
               document.write(name);
+          }
+      function changename()
+          {
+          name = window.prompt("new username:")
+              showname()
           }
 
     </script>
   </head>
   <body>
     <p>
-    Welcome <script>name</script>
-      <button onclick="myFunction()">kick here</button>
+    Welcome <script>showname()</script>
+      <button onclick="changename()">kick here</button>
     </p><hr/>
     <pa id="a">A</pa>
     <pa id="b">B</pa>
