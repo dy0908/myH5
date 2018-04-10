@@ -14,9 +14,16 @@
           }
       function changename()
           {
-          name = window.prompt("new username:")
-              showname()
+          name = window.prompt("new username:");
+          name = iflegal(name);
+          showname();
           }
+      function iflegal(a) {
+          if(a == "123"){
+              a = "not a real name.";
+          }
+          return a;
+      }
 
     </script>
   </head>
