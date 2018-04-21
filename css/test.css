@@ -1,0 +1,44 @@
+p{
+    font-size:50px;
+}
+
+#a{
+    animation:a 5s infinite;
+}
+#b{
+    animation:b 5s infinite;
+}
+#c{
+    animation:c 5s infinite;
+}
+#d{
+    animation:d 5s infinite;
+}
+
+@keyframes a {
+    0%{opacity:0}
+    20%{opacity:100}
+    40%{opacity:0}
+    100%{opacity:0}
+}
+@keyframes b{
+    0%{opacity:0}
+    20%{opacity:0}
+    40%{opacity:100}
+    60%{opacity:0}
+    100%{opacity:0}
+}
+@keyframes c {
+    0%{opacity:0}
+    40%{opacity:0}
+    60%{opacity:100}
+    80%{opacity:0}
+    100%{opacity:0}
+}
+@keyframes d {
+    0%{opacity:0}
+    60%{opacity:0}
+    80%{opacity:100}
+    100%{opacity:0}
+}
+

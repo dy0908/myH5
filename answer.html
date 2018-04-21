@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>grtanswer</title>
+    <style type="text/css">
+        p1{
+            font-size: 100px;
+        }
+    </style>
+    <script>
+        function getanswer() {
+            var radom  =Math.floor(Math.random()*4)+1;
+            var str =String.fromCharCode(radom+64);
+            document.write(str+"</br>");
+        }
+        function howmanyanswers() {
+            var t = window.prompt("hawmanyanswers?");
+            var i =0;
+            do{
+                getanswer();
+                i = i+1;
+            }while (i < t);
+        }
+    </script>
+</head>
+<body>
+<p1>
+    <script>
+
+        howmanyanswers();
+    </script>
+</p1>
+</body>
+</html>
