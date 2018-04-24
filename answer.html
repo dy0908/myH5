@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>grtanswer</title>
     <style type="text/css">
-        p1{
+        #test{
             font-size: 100px;
         }
     </style>
@@ -16,20 +16,25 @@
         }
         function howmanyanswers() {
             var t = window.prompt("hawmanyanswers?");
-            var i =0;
-            do{
-                getanswer();
-                i = i+1;
-            }while (i < t);
+            var i = 0;
+            if( t > 0 ){
+                do {
+                    getanswer();
+                    i = i + 1;
+                }
+                while (i < t)
+            }
+            else {
+                document.getElementById("test").innerText = "No answer."
+        }
         }
     </script>
 </head>
 <body>
-<p1>
+<p id = "test" style="text-align: center">
     <script>
-
         howmanyanswers();
     </script>
-</p1>
+</p>
 </body>
 </html>
