@@ -23,28 +23,30 @@
         {
             var exdate=new Date();
             exdate.setDate(exdate.getDate()+expiredays);
-            document.cookie=c_name+ "=" +escape(value)+
-                ((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+            document.cookie=c_name+ "=" + value
         }
         function checkCookie()
         {
             username=getCookie('username');
-            if (username!=null && username!="")
+            if (username!= null && username !="")
             {alert('Welcome again '+username+'!')}
             else
             {
                 username=prompt('Please enter your name:',"");
-                if (username!=null && username!="")
+                if (username!=null && username !="")
                 {
                     setCookie('username',username,365)
                 }
             }
         }
         function cleatCookie() {
+            setCookie('username',"",365);
+            document.getElementById("a").innerText = document.cookie
         }
     </script>
 </head>
 <body onLoad="checkCookie()">
-<button onclick="setCookie('username',null,365)">清空cookie</button>
+<button onclick="cleatCookie()">清空cookie</button>
+<p id="a">a</p>
 </body>
 </html>
